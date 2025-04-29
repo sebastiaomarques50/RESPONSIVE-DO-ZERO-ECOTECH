@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Responsividade do Zero</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <nav class="container navegacao">
+        <div class="logo">EcoTech</div>
+
+        <button class="botao-menu">=</button>
+
+        <ul class="menu">
+          <li>
+            <a href="#destaque">incio</a>
+          </li>
+          <li>
+            <a href="#recursos">Recursos</a>
+          </li>
+          <li>
+            <a href="#sobre">Sobre</a>
+          </li>
+          <li>
+            <a href="#inicio">fale conosco</a>
+          </li>
+          <li>
+            <a href="#recurso">contratar agora</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="destaque" id="destaque">
+      <div class="container">
+        <div class="texto">
+          <h1>Tecnologia Sustentavel</h1>
+          <p>
+            Prdutos que combinam inovação com responsabilidade ambiental
+            redizindo impactor sem compremeter qualidade
+          </p>
+          <a href="#" class="botao">Explorar</a>
+        </div>
+
+        <div class="imagem">
+          <img src="./img/img1.png" alt=" logo-ecotech" />
+        </div>
+      </div>
+    </section>
+
+    <section class="recursos" id="recursos">
+      <h2>Nossos Diferenciais</h2>
+
+      <div class="container">
+        <div class="card">
+          <div class="icone">♻️</div>
+          <h3>Materiais Sustentavel</h3>
+          <p>
+            Compontentes reciclaveis biodegradaveis que reduzem i
+            impactorambiental
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="icone">⚡</div>
+          <h3>Eficiencia Energética</h3>
+          <p>Dispositivo que consomem menos energia e tem maior vida util</p>
+        </div>
+
+        <div class="card">
+          <div class="icone">🌱</div>
+          <h3>Programa de reciclagem</h3>
+          <p>
+            Logistica reversa para reciclagem adequada de dispositivos antigos
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Pronto para fazer a diferença?</h2>
+      <p>
+        Junte-se a quem escolheu a tecnologia conciente para o futuro do planeta
+      </p>
+      <a href="#" class="botao">comprar agora</a>
+    </section>
+
+    <footer>Direitos Reservado Econtech - 2025</footer>
+  </body>
+
+  <script>
+    let botao = document.querySelector(".botao-menu");
+    let menu = document.querySelector(".menu");
+
+    botao.addEventListener("click", () => {
+      menu.classList.toggle("ativo");
+    });
+  </script>
+</html>
